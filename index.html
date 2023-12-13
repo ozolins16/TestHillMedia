@@ -38,16 +38,22 @@
             <span class="bar"></span>
         </div>
     </nav>
-
         <section class="portfolio">
-            <div class="image-container"></div>
-            <div class="image-container-gradient"></div>
-            <div class=" portfolio-text-h2">
-                <h2>"Saturs, kas atnes uzvaras!"</h2>
+            <div id="video-bg"></div>
+            <video id="video" controls src="Video/Intro.mp4" onended="stopVideo()"></video>
+            <div id="stop-video" onclick="stopVideo()"></div>
+            
+            <div class="video-container-gradient">
+                <video class="video-container" id="bgvideo" src="Video/Intro.mp4" muted loop></video>
             </div>
-            <div class="portfolio-text-p">
-                <p>Mēs veidojam mūsdienīgu saturu sporta organizācijām,<br> 
+            
+            <div class=" portfolio-text-h2">
+                <!-- <h2>Saturs, kas atnes uzvaras!</h2> -->
+            </div>
+            <div class="portfolio-text">
+                <p>Mēs veidojam mūsdienīgu saturu sporta organizācijām,
                     lai veicinātu atpazīstamību sociālo tīklu vidē.</p>
+                <button class="play-btn"  onclick="playVideo()">Skatīties video</button>
             </div>
         </section>
     
@@ -74,13 +80,17 @@
             <h2 class="partneri-h1">Partneri</h2>
             <div class="wrapper">
                 <div class="partneri-logo">
-                    <a target="_blank" href="https://my.synottip.lv/" class="partneri-logo-1"></a>
-                    <a target="_blank" href="https://www.melnagovs.lv/" class="partneri-logo-2"></a>
-                    <a target="_blank" href="https://jdfs.lv/" class="partneri-logo-3"></a>
-                    <a target="_blank" href="https://casino.joker.lv/" class="partneri-logo-4"></a>
-                    <a target="_blank" href="https://www.sky.lv/" class="partneri-logo-5"></a>
-                    <a target="_blank" href="https://www.sky.lv/" class="partneri-logo-6"></a>
-                    <a target="_blank" href="https://www.sky.lv/" class="partneri-logo-7"></a>
+                    <a target="_blank" href="https://www.tv3.lv/" id="partneri-logo-6" class="partneri-a"></a>
+                    <a target="_blank" href="https://my.synottip.lv/" id="partneri-logo-1" class="partneri-a"></a>
+                    <a target="_blank" href="https://www.instagram.com/bsa_football/" id="partneri-logo-7" class="partneri-a"></a>
+                    <a target="_blank" href="https://www.melnagovs.lv/" id="partneri-logo-2" class="partneri-a"></a>
+                    <a target="_blank" href="https://jdfs.lv/" id="partneri-logo-3" class="partneri-a"></a>
+                    <a target="_blank" href="https://casino.joker.lv/" id="partneri-logo-4" class="partneri-a"></a>
+                    <a target="_blank" href="https://www.sky.
+                    
+                    lv/" id="partneri-logo-5" class="partneri-a"></a>
+                    
+                    
                 </div>
             </div>
         </section>

@@ -118,6 +118,33 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
   navLinks.classList.remove('active')
 }));
 
+// PlayVideo
+bgvideo = document.getElementById('bgvideo');
+bgvideo.play();
+
+video = document.getElementById('video');
+videoBg = document.getElementById('video-bg');
+stopVideoBtn = document.getElementById('stop-video');
+
+videoBg.addEventListener('click', stopVideo);
+stopVideoBtn.addEventListener('click'. stopVideo);
+
+function playVideo() {
+  video.style.display = 'block';
+  videoBg.style.display = 'block';
+  stopVideoBtn.style.display = 'block';
+  video.play();
+}
+
+function stopVideo() {
+  video.style.display = 'none';
+  videoBg.style.display = 'none';
+  stopVideoBtn.style.display = 'none';
+  video.pause();
+  video.currentTime = 0;
+}
+
+
 
 
 
